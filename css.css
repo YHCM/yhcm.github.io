@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+/* banner样式 */
+.banner{
+    position: relative;
+    overflow: hidden;
+    width: 720px;
+    height: 450px;
+    margin: 100px auto;
+}
+/* 图片滚动区域 */
+.images{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4320px;
+}
+/* 滚动图片 */
+.images li{
+    float: left;
+}
+/* 设置图片大小 */
+.banner img{
+    width: 720px;
+    height: 450px;
+}
+/* 左右箭头样式 */
+.prev, .next{
+    display: block;
+    position: absolute;
+    /* 绝对定位垂直居中 */
+    top: 50%;
+    margin-top: -40px;
+    width: 80px;
+    height: 80px;
+    font-size: 80px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+    text-decoration: none;
+}
+/* 设置左右箭头靠左靠右 */
+.prev{
+    left: 0;
+    margin-left: 10px;
+    /* 设置圆角 */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.next{
+    right: 0;
+    margin-right: 10px;
+    /* 设置圆角 */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+/* 小圆点盒子样式 */
+.dots{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    /* 这里的margin-left是整个dots盒子宽度的一半 */
+    margin-left: -62.5px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+/* 小圆点样式 */
+.dots li{
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 2.5px 5px;
+}
+/* 小圆点被点击样式 */
+.dots .active{
+    /* background-color: #ff5000; */
+    background-color: #654739;
+}
+/* 设置小圆点碰到变成小手指 */
+.dots :hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
